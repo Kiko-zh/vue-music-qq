@@ -36,7 +36,9 @@ module.exports = {
     alias: {
       '@': resolve('src'),
       'common': resolve('src/common'), // 修改common的别名
-      'components': resolve('src/components') // 修改common的别名
+      'components': resolve('src/components'),
+      'api': resolve('src/api'),
+      'base': resolve('src/base')
     }
   },
   module: {
