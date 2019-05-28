@@ -37,7 +37,7 @@ export default function jsonp (url, data, option) {
 }
 
 // 定义一个函数param, 传入参数data, 处理data拼接到url上去
-function param (data) {
+export function param (data) {
   let url = ''
   // 遍历data
   for (var k in data) {

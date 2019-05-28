@@ -2,11 +2,11 @@
   <div class="recommend" ref="recommend">
     <div class="recommend-content">
       <!-- 轮播图 -->
-      <div class="slider-wrapper" v-if="recommends.length" ref="sliderWrapper">
-        <slider>
+        <div v-if="recommends.length" class="slider-wrapper" ref="sliderWrapper">
+        <slider :imgData="recommends">
           <div v-for="item in recommends" :key="item.id">
             <a :href="item.linkUrl">
-              <img :src="item.picUrl" @load="loadImage" class="needsclick">
+                <img class="needsclick" @load="loadImage" :src="item.picUrl">
             </a>
           </div>
         </slider>

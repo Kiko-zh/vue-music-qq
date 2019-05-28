@@ -1,6 +1,8 @@
+/* DOM相关的操作 */
+
 // 判断el元素是否有输入的类名 className
 export function hasClass(el, className) {
-  // 使用正则匹配
+  // 使用正则匹配 \\s: 空白字符
   let reg = new RegExp('(^|\\s)' + className + '(\\s|$)')
   return reg.test(el.className)
 }
